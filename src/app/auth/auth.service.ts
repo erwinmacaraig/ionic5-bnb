@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
     private _userIsAuthenticated = true;
-    private _userId = 'abc';
+    private _userId = 'erwin';
 
     constructor() {}
 
@@ -22,6 +22,6 @@ export class AuthService {
     }
 
     get userId() {
-        return this.userId;
+        return this._userId;
     }
 }
